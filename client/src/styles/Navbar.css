@@ -1,0 +1,9 @@
+
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+.active-nav {
+   color: rgb(191, 43, 43);
+   border-bottom: 2px solid rgb(181, 35, 35);
+}
