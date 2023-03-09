@@ -3,7 +3,7 @@ import "../styles/Navbar.css";
 import { AiOutlineProfile } from 'react-icons/ai';
 import { GrHomeRounded } from 'react-icons/gr'
 import { IoIosNotificationsOutline } from 'react-icons/io';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 const img = require("../assests/logo.png");
 const Navbar = () => {
   const navref = useRef();
@@ -28,21 +28,21 @@ const Navbar = () => {
         <ul className='flex md:flex-row flex-col bg-white md:items-center md:gap-[4vw] gap-6'>
           <li className='flex items-center gap-2'>
             <GrHomeRounded className='text-xl' />
-            <Link to={'/'}>
+            <NavLink to={'/'}>
               <span className='cc text-base font-medium hover:text-[#b12d2d] hover:border-b-2 hover:border-[#b12020]'>Home</span>
-            </Link>
+            </NavLink>
           </li>
           <li className='flex items-center gap-2'>
             <AiOutlineProfile className='text-2xl' />
-            <Link to={'/'}>
+            <NavLink to={'/profile'}>
               <span className='text-base font-medium  hover:text-[#b12d2d] hover:border-b-2 hover:border-[#b12020]'>Profile</span>
-            </Link>
+            </NavLink>
           </li>
           <li className='flex items-center gap-2'>
             <IoIosNotificationsOutline className='text-2xl' />
-            <Link to={'/'}>
+            <NavLink to={'/Notifi'}>
               <span className='text-lg font-medium  hover:text-[#b12d2d] hover:border-b-2 hover:border-[#b12020]'>Notifications</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
