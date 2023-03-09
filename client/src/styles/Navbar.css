@@ -1,5 +1,9 @@
 
-
+.active {
+    color: rgb(154, 42, 42);
+    border-bottom-width: 3px;
+    border-color: rgb(181, 35, 35);
+}
 .navbar {
     font-family: 'Poppins', sans-serif;
 }
